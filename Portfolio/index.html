@@ -3,11 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/tailwindcss-cdn@3.4.10/tailwindcss-with-all-plugins.js"></script>
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="bg-black">Portfolio.</header>
+    <header class="h-[10vh] flex justify-between items-center p-5 text-lg">
+      <h1 class="text-2xl font-bold">Portfolio.</h1>
+      <nav class="list-none flex gap-x-4 font-bold">
+        <li>Home</li>
+        <li>Skills</li>
+        <li>Projects</li>
+        <li>About</li>
+      </nav>
+    </header>
+    <section class="hero-section h-[90vh] max-w-screen grid grid-cols-2">
+      <div class="left-intro bg-red-600"></div>
+      <div class="right-image bg-black"></div>
+    </section>
+    <section class="Skills max-w-screen h-screen">
+      <div
+        class="skills-div grid text-base  h-full place-items-center grid-cols-4 w-2/4 rounded-lg gap-0 hover:shadow-2xl hover:shadow-zinc-900 transition-all ease-in-out duration-700">
+        <div><i class="fa-solid fa-circle-check mr-2"></i>HTML</div>
+        <div><i class="fa-solid fa-circle-check mr-2"></i>CSS</div>
+        <div><i class="fa-solid fa-circle-check mr-2"></i>TAILWIND</div>
+        <div><i class="fa-solid fa-circle-check mr-2"></i>BOOTSTRAP</div>
+        <div><i class="fa-solid fa-circle-check mr-2"></i>SCSS</div>
+        <div><i class="fa-solid fa-circle-check mr-2"></i>Material UI</div>
+        <div><i class="fa-solid fa-circle-check mr-2"></i>JAVASCRIPT</div>
+        <div><i class="fa-solid fa-circle-check mr-2"></i>JQUERY</div>
+        <div><i class="fa-solid fa-circle-check mr-2"></i>REACT</div>
+        <div><i class="fa-solid fa-circle-check mr-2"></i>REDUX/RTK</div>
+        <div><i class="fa-solid fa-circle-check mr-2"></i>NODE JS</div>
+        <div><i class="fa-solid fa-circle-check mr-2"></i>EXPRESS</div>
+        <div><i class="fa-solid fa-circle-check mr-2"></i>EJS</div>
+        <div><i class="fa-solid fa-circle-check mr-2"></i>MONGO DB</div>
+        <div><i class="fa-solid fa-circle-check mr-2"></i>MY SQL</div>
+        <div><i class="fa-solid fa-circle-check mr-2"></i>GIT & GUTHUB</div>
+      </div>
+    </section>
+    <!-- <footer class="Contact max-h-[90vh] bg-green-800">
+      <i class="fa-solid fa-envelope"></i>
+      <div class="links"></div>
+    </footer> -->
   </body>
 </html>
