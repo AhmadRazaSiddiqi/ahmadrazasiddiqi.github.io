@@ -4,27 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://unpkg.com/tailwindcss-cdn@3.4.10/tailwindcss-with-all-plugins.js"></script>
     <title>Portfolio</title>
   </head>
   <body>
     <header class="h-[10vh] flex justify-between items-center p-5 text-lg">
       <h1 class="text-2xl font-bold">Portfolio.</h1>
-      <nav class="list-none flex gap-x-4 font-bold">
-        <li>Home</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>About</li>
+      <div class="menu-div">
+        <i class="fa-solid fa-bars sm:block md:hidden"></i>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <nav class="list-none md:flex gap-x-4 font-bold hidden">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
       </nav>
     </header>
     <section class="hero-section h-[90vh] max-w-screen grid grid-cols-2">
-      <div class="left-intro bg-red-600"></div>
-      <div class="right-image bg-black"></div>
+      <div class="left-intro text-center">
+        <h2 class="text-xl font-semi-bold">Hi! I'm AHMAD RAZA SIDDIQI</h2>
+        <h1 class="text-4xl">MERN Stack Developer</h1>
+        <div class="CV-div mt-3 flex items-center justify-center gap-4 p-4">
+          <button onclick="window.open('Assets/CV.pdf')" class="bg-zinc-800 text-white p-3 rounded-full hover:bg-zinc-950">Download CV</button
+          ><button class="bg-zinc-900 text-white py-3 px-5 rounded-full hover:bg-zinc-950">About Me</button>
+        </div>
+      </div>
+      <div class="right-image p-1">
+        <img height="100%" width="50%"
+          src="./Assets/aiease_ai_skin_16c27b06-3cb8-4d7.png"
+          alt="image"
+          class="rounded-lg
+        />
+      </div>
     </section>
-    <section class="Skills max-w-screen h-screen">
+    <section class="About">
+      <div id="Education"></div>
+      <div id="certificates"></div>
+    </section>
+     <h1 class="text-4xl font-bold text-center">SKILLS</h1>
+     <p class="text-center font-light text-2xl">Here Are Some of My Expertise</p>
+    <section class="Skills flex justify-center items-center h-screen relative">
       <div
-        class="skills-div grid text-base  h-full place-items-center grid-cols-4 w-2/4 rounded-lg gap-0 hover:shadow-2xl hover:shadow-zinc-900 transition-all ease-in-out duration-700">
+        class="skills-div grid grid-cols-4 Shadow transition-all ease-in-out duration-700 border border-zinc-500 h-[60vh] rounded-lg w-[70vw] items-center p-[1vw]" 
+      >
         <div><i class="fa-solid fa-circle-check mr-2"></i>HTML</div>
         <div><i class="fa-solid fa-circle-check mr-2"></i>CSS</div>
         <div><i class="fa-solid fa-circle-check mr-2"></i>TAILWIND</div>
@@ -40,12 +70,51 @@
         <div><i class="fa-solid fa-circle-check mr-2"></i>EJS</div>
         <div><i class="fa-solid fa-circle-check mr-2"></i>MONGO DB</div>
         <div><i class="fa-solid fa-circle-check mr-2"></i>MY SQL</div>
-        <div><i class="fa-solid fa-circle-check mr-2"></i>GIT & GUTHUB</div>
+        <div class="col-start-2"><i class="fa-solid fa-circle-check mr-2"></i>GIT & GUTHUB</div>
       </div>
     </section>
-    <!-- <footer class="Contact max-h-[90vh] bg-green-800">
+    <section class="Projects box-content min-h-screen w-full bg-slate-950">
+      <h2>Browse My Recent Projects</h2>
+      <div class="projects-div flex flex-wrap justify-center min-w-fit">
+        <div class="">
+          <div>
+            <img class="rounded-md" src="https://placehold.co/400" alt="404" />
+            <div class="btn-div flex justify-around mt-9 bg-red-800">
+              <button class="bg-black text-white p-3 px-4 rounded-full">
+                Live Demo</button
+              ><button class="bg-black text-white p-3 px-4 rounded-full">
+                Source Code
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img class="rounded-md" src="https://placehold.co/400" alt="404" />
+          <div class="btn-div flex justify-around mt-9"><div></div></div>
+          <button class="bg-black text-white p-3 px-4 rounded-full">
+            Live Demo</button
+          ><button class="bg-black text-white p-3 px-4 rounded-full">
+            Source Code
+          </button>
+        </div>
+        <div>
+          <img class="rounded-md" src="https://placehold.co/400" alt="404" />
+          <div class="btn-div flex justify-around mt-9"><div></div></div>
+          <button class="bg-black text-white p-3 px-4 rounded-full">
+            Live Demo</button
+          ><button class="bg-black text-white p-3 px-4 rounded-full">
+            Source Code
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="Contact min-h-[90vh] bg-green-800">
       <i class="fa-solid fa-envelope"></i>
-      <div class="links"></div>
-    </footer> -->
+      <div class="links flex">
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+      </div>
+    </footer>
   </body>
+  <script src="script.js"></script>
 </html>
