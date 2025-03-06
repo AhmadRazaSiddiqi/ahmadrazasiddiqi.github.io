@@ -201,10 +201,12 @@
   <script src="script.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    setTimeout(function () {
-      AOS.init({
-        once: true,
-      })
-    }, 1000)
+    document.ready(
+      setTimeout(function () {
+        AOS.init({
+          once: true,
+        })
+      }, 1000)
+    )
   </script>
 </html>
