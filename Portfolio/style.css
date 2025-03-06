@@ -37,6 +37,7 @@ a:hover::after {
 .right-image{
   align-content: center;
   box-sizing: border-box;
+
 }
 img{
   transition: all ease-in-out .3s;
