@@ -13,7 +13,7 @@ nav > a::after {
   content: "";
   height: 2px;
   transform: scale(0);
-  background-color: #09090b;
+  background-color: grey;
   outline: none;
   transition: all 300ms ease-in-out;
   display: block;
@@ -24,6 +24,7 @@ a:hover::after {
   transform: scaleX(1);
 }
 .Skills{
+  min-height: 100vh;
   align-content: center;
 
 }
@@ -54,8 +55,25 @@ img:hover{
 transform: scale(1.1);
 
 }
-#Projects{
+#projects{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(300px,auto));
   justify-content: space-evenly;
+  align-content: center; 
+
+}
+
+li,a{
+  cursor: pointer;
+}
+
+.contact{
+  transition: all ease-in-out .3s;
+}
+.contact:hover{
+  transform: translateY(-1vh);
+
+}
+#content{
+  align-items: center;
 }
